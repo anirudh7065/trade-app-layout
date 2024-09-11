@@ -10,7 +10,7 @@ const MidComponent = () => {
                 <div className="top flex justify-between items-center w-full p-2">
                     <h1 className='text-2xl font-extrabold'>Activity</h1>
                     <button className='bg-slate-600 bg-blend-screen text-[13px] rounded-3xl py-2 px-4 font-bold flex gap-1 items-center'>Weekly
-                        <Image src='/logo/white-arrow.png' width={10} height={10} alt='arrow'/>
+                        <Image src='./logo/white-arrow.png' width={10} height={10} alt='arrow'/>
                     </button>
                 </div>
                 <ChartComponent />

@@ -10,7 +10,7 @@ const CardOptions = ({ img, title, className }) => {
             </div>
             <h1 className="text-xl  w-[60%] px-2  h-4/6 text-left content-center ">{title}</h1>
             <div className="arrow lg:h-1/2 h-[15%] w-[5%]content-center">
-            <Image src={`/logo/select-arrow.png`} alt={title} width={100} height={100} className="h-full w-full"  />
+            <Image src={`./logo/select-arrow.png`} alt={title} width={100} height={100} className="h-full w-full"  />
             </div>
         </div>
     )

@@ -9,7 +9,7 @@ const Sidebar = () => {
                 <div className="logo contain-content p-2 h-[10vh] w-5/6 mx-auto ">
                     <Image
 
-                        src={'/logo/logo.svg'} alt="logo" width={500} height={500}
+                        src={'./logo/logo.svg'} alt="logo" width={500} height={500}
                         className='w-full'
                     />
                 </div>

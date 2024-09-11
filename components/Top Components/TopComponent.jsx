@@ -19,7 +19,7 @@ const TopComponent = () => {
                     <h2 className='text-lg font-bold'>Net Profit</h2>
                     <h1 className='text-[28px] font-extrabold'>$6782.25</h1>
                     <h1 className={`text-[18px] font-bold text-green-600 flex items-center`}>
-                        <Image src={'/logo/arrow-up.png'} alt='arrow' width={7} height={3} className="mr-1 h-1/2" />
+                        <Image src={'./logo/arrow-up.png'} alt='arrow' width={7} height={3} className="mr-1 h-1/2" />
                         3
                     </h1>
                 </div>

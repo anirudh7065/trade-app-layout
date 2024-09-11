@@ -7,7 +7,7 @@ const RecentOrderItems = ({ Customer, OrderNo, Amount, Status }) => {
             <td className="">
                 <div className="my-4 flex items-center gap-x-2">
 
-                <Image src={'/logo/avatar-3.png'} width={30} height={30} alt={'avatar'} className="rounded-full" />
+                <Image src={'./logo/avatar-3.png'} width={30} height={30} alt={'avatar'} className="rounded-full" />
                 <span className="">{Customer}</span>
                 </div>
             </td>

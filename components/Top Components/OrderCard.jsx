@@ -17,7 +17,7 @@ const OrderCard = ({ img, title, color, count, profit, loss, rev }) => {
             <div className="bottom h-[20%] flex justify-between items-center">
                 <h1 className='text-[22px] font-extrabold'>{count ? count : `$${rev}`}</h1>
                 <h1 className={`text-[14px] font-bold ${profit ? 'text-green-600' : 'text-red-600'} flex items-center`}>
-                    {profit ? <Image src={'/logo/arrow-up.png'} alt='arrow' width={7} height={3} className="mr-1 h-1/2" /> : <Image src={'/logo/arrow-down.png'} alt='arrow' width={7} height={3} className="mr-1 h-1/2" />}
+                    {profit ? <Image src={'./logo/arrow-up.png'} alt='arrow' width={7} height={3} className="mr-1 h-1/2" /> : <Image src={'./logo/arrow-down.png'} alt='arrow' width={7} height={3} className="mr-1 h-1/2" />}
                     {profit ? profit : `-${loss}`}
                 </h1>
             </div>
