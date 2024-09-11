@@ -1,5 +1,6 @@
 import { Sheet, SheetClose, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import Image from 'next/image';
+import { sheetData } from '@/constants';
 
 
 const MobileNav = () => {
@@ -10,7 +11,7 @@ const MobileNav = () => {
                     <SheetTitle />
                     <SheetTrigger asChild>
                         <Image
-                            src="./logo/hamburger.svg"
+                            src="/logo/hamburger.svg"
                             width={30}
                             height={30}
                             alt="hamburger icon"
@@ -22,26 +23,18 @@ const MobileNav = () => {
                         <SheetDescription />
                         <section className=" flex h-full flex-col gap-6 pt-16 text-white">
                             <SheetClose asChild>
-                                <h1 className='text-2xl'>Home</h1>
-                            </SheetClose>
-                            <SheetClose asChild>
-                                <h1 className='text-2xl'>Orders</h1>
-                            </SheetClose>
-                            <SheetClose asChild>
-                                <h1 className='text-2xl'>Trade</h1>
-                            </SheetClose>
-                            <SheetClose asChild>
-                                <h1 className='text-2xl'>Wallet</h1>
-                            </SheetClose>
-                            <SheetClose asChild>
-                                <h1 className='text-2xl'>Settings</h1>
+                                {
+                                    sheetData.map((data, index) => {
+                                        return <h1 className='text-2xl' key={index}>{data}</h1>
+                                    })
+                                }
                             </SheetClose>
                         </section>
                     </SheetContent>
                 </Sheet>
             </section>
             <Image
-                src="./logo/logo.svg"
+                src="/logo/logo.svg"
                 width={25}
                 height={25}
                 alt="logo"

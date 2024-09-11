@@ -1,4 +1,5 @@
 import RecentOrderItems from './RecentOrderItems'
+import { recentOrders } from '@/constants'
 
 const RecentOrders = () => {
     return (
@@ -14,14 +15,11 @@ const RecentOrders = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <RecentOrderItems Customer={'John Doe'} OrderNo={'12345'} Amount={'$100'} Status={'Delivered'} />
-                    <RecentOrderItems Customer={'Brock Lesnor'} OrderNo={'15645'} Amount={'$200'} Status={'Pending'} />
-                    <RecentOrderItems Customer={'John cina'} OrderNo={'25845'} Amount={'$500'} Status={'Cancelled'} />
-                    <RecentOrderItems Customer={'Abraham Doe'} OrderNo={'196545'} Amount={'$450'} Status={'Delivered'} />
-                    <RecentOrderItems Customer={'Lucifer Mornigstar'} OrderNo={'566545'} Amount={'$600'} Status={'Pending'} />
-                    <RecentOrderItems Customer={'Modi'} OrderNo={'123545'} Amount={'$1000'} Status={'Delivered'} />
-                    <RecentOrderItems Customer={'Modi'} OrderNo={'123545'} Amount={'$1000'} Status={'Delivered'} />
-
+                    {
+                        recentOrders.map((data, index) => {
+                            return <RecentOrderItems key={index} {...data} />
+                        })
+                    }
                 </tbody>
             </table>
         </div>

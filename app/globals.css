@@ -36,6 +36,9 @@ body {
   scrollbar-width: none;
   /* Firefox */
 }
+.bg-orange-800{
+  background-color: rgb(135, 36, 0);
+}
 
 @layer base {
   :root {

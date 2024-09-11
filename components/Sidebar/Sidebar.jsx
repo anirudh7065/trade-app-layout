@@ -1,5 +1,6 @@
 import Image from "next/image"
 import SidebarIcon from "./SidebarIcon"
+import { sidebarData } from "@/constants"
 
 const Sidebar = () => {
     return (
@@ -8,16 +9,14 @@ const Sidebar = () => {
                 <div className="logo contain-content p-2 h-[10vh] w-5/6 mx-auto ">
                     <Image
 
-                        src={'./logo/logo.svg'} alt="logo" width={500} height={500}
+                        src={'/logo/logo.svg'} alt="logo" width={500} height={500}
                         className='w-full'
                     />
                 </div>
                 <div className="navigate w-full flex flex-col justify-center items-center gap-8">
-                    <SidebarIcon src={'./logo/home.svg'} />
-                    <SidebarIcon src={'./logo/todo.png'} />
-                    <SidebarIcon src={'./logo/chart.png'} />
-                    <SidebarIcon src={'./logo/wallet.png'} />
-                    <SidebarIcon src={'./logo/bag.png'} />
+                    {sidebarData.map((data, index) => {
+                        return <SidebarIcon key={index} {...data} />
+                    })}
                 </div>
             </div>
         </div>

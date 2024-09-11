@@ -1,6 +1,6 @@
-import Image from "next/image"
 import SettingIcon from "./SettingIcon"
 import MobileNav from "./MobileNav"
+import { settingsData } from "@/constants"
 const Navbar = () => {
     return (
         <>
@@ -9,11 +9,10 @@ const Navbar = () => {
                     <input type="text" name="search" id="search" placeholder={`Search`}
                         className='w-full h-5/6border-2 bg-blend-overlay border-gray-900 rounded-lg focus:bg-none bg-search bg-no-repeat box-border px-9 py-2 bg-gray-700 ' />
                 </div>
-                <div className="settings w-1/5 h-1/2 flex gap-2">
-                    <SettingIcon src={'./logo/email.png'} classn={' w-1/2 '} />
-                    <SettingIcon src={'./logo/settings.png'} classn={' w-1/2 '} />
-                    <SettingIcon src={'./logo/bell.png'} classn={' w-1/2 '} />
-                    <SettingIcon src={'./logo/avatar-3.png'} classn={' w-full '} />
+                <div className="settings w-1/6 h-1/2 flex gap-2">
+                    {settingsData.map((data, index) => {
+                        return <SettingIcon key={index} src={data.src} className={data.className} />
+                    })}
                 </div>
             </nav>
             <MobileNav />
