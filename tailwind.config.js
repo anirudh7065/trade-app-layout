@@ -55,7 +55,7 @@ module.exports = {
 				}
 			},
 			backgroundImage: {
-				search: "url('./logo/search.svg')"
+				search: "url('/logo/search.svg')"
 			},
 			backgroundPosition: {
 				search: '10px 8px'
