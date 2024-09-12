@@ -23,11 +23,11 @@ const MobileNav = () => {
                         <SheetDescription />
                         <section className=" flex h-full flex-col gap-6 pt-16 text-white">
                             {sheetData.map((data, index) => {
-                                return{
+                                return(
                                          <SheetClose asChild key={index}>
                                             <h1 className='text-lg font-extrabold'>{data}</h1>
                                          </SheetClose>
-                                 }
+                                 )
                             })}
                         </section>
                     </SheetContent>
