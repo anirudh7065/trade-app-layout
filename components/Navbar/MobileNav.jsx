@@ -25,7 +25,7 @@ const MobileNav = () => {
                             {sheetData.map((data, index) => {
                                 return {
 <SheetClose asChild key={index}>
-                                    {data}
+                                    <h1>{data}</h1>
                                 </SheetClose>
 }
                             })}
