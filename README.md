@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Trading App Frontend
+
+A simple and clean trading application frontend built with **Next.js** and **Tailwind CSS**. This layout features a header, sidebar with market symbols, a main content area with a chart placeholder, and tabs to display orders and trades.
+
+---
+
+## Features
+
+- Responsive layout with Tailwind CSS  
+- Sidebar navigation for different market symbols and filters  
+- Header with main navigation links  
+- Main content area displaying a placeholder for trading charts  
+- Tabs to switch between Orders and Trades lists with sample data  
+- Easy to extend with real-time data and chart libraries  
+
+---
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/) - React framework for server-side rendering and static site generation  
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework for styling  
+- React hooks for state management  
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (v14 or above recommended)  
+- npm or yarn package manager  
+
+### Installation
+
+1. Clone the repository or create a new Next.js app and replace `pages/index.js` with the provided code.  
+2. Install Tailwind CSS as per the official Next.js guide:
+```bash
+   npm install -D tailwindcss postcss autoprefixer
+   npx tailwindcss init -p
+````
+
+3. Configure `tailwind.config.js` and add Tailwind directives to `styles/globals.css`.
+
+### Running the App
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit [http://localhost:3000](http://localhost:3000) to see the app.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Project Structure
 
-## Learn More
+* `app/page.js` - Main trading app layout
+* `styles/globals.css` - Tailwind CSS imports
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Future Enhancements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+* Integrate real trading data APIs
+* Add interactive charts (e.g. with Chart.js or Recharts)
+* Add authentication and user portfolio management
+* Implement order placement and trade history
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Abhishek Valsan**
+
+---
+
+## License
+
+This project is open source and free to use.
+
+
